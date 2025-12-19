@@ -1,0 +1,1 @@
+For these scripts, the packages contained in the environment file "Snow module" must be installed. First, run the Earth Engine script to create the elevation bands, and then run the snow module.
