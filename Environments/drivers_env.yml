@@ -1,4 +1,4 @@
-name: piripiri
+name: drivers_env
 channels:
   - anaconda
   - conda-forge
@@ -307,3 +307,4 @@ dependencies:
       - xyzservices==2023.7.0
       - zstandard==0.22.0
 prefix: C:\Users\juliarudlang\Anaconda\envs\piripiri
+
