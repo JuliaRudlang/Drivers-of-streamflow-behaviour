@@ -1,0 +1,3 @@
+
+Data is from the EStreams dataset (link...)
+To run the scripts in this repository, you will need streamflow timeseries, catchment information (network file) and catchment boundaries (shp.)
