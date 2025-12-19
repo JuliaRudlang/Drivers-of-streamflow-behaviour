@@ -1,0 +1,4 @@
+
+Here the climate attributes from the snow module are calculated.
+You will need to install the "drivers_env" as an environment for all the necessary packages. 
+In order to run this script, you must have run the scripts in the "Snow module" folder already.
