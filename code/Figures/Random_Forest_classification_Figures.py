@@ -3735,3 +3735,4 @@ plt.tight_layout()
 plt.savefig(r'U:\Hydrological Data\EStreams\Figures\1st paper\Version 2\FI_rankingscatter_v2_notext_10C_V2.pdf',bbox_inches='tight', dpi=300)
 plt.savefig(r'U:\Hydrological Data\EStreams\Figures\1st paper\Version 2\FI_rankingscatter_v2_notext_10C_V2.png',bbox_inches='tight', dpi=300)
 
+
