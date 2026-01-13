@@ -2282,7 +2282,7 @@ plt.tight_layout()
 plt.savefig(r'U:\Hydrological Data\EStreams\Figures\1st paper\Version 2\ROC_curve_allversions_10C.pdf',bbox_inches='tight', dpi=300)
 plt.savefig(r'U:\Hydrological Data\EStreams\Figures\1st paper\Version 2\ROC_curve_allversions_10C.png',bbox_inches='tight', dpi=300)
 
-#%% Julius example
+#%% Test and set up for roc
 # Micro avregaed, so all of the test values for each fold are taken out and taken together
 # thus there is no shaded area, because we are treating everything 
 
@@ -2290,8 +2290,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import label_binarize
 from sklearn.metrics import roc_curve, auc
-#%% Julius example, micro avergaed roc curve
-#Needed
+#%% 
+
 all_runs = {
     0: (all_y_test_0_fold, all_y_score_0_fold, all_y_pred_0_fold),
     2: (all_y_test_2_fold, all_y_score_2_fold, all_y_pred_2_fold),
@@ -2310,7 +2310,7 @@ run_labels = {
     6: "6-A"
 }
 
-# your experiment colors in the correct order
+#  experiment colors in the correct order
 colors = [
     "#159895",  # teal (lightseagreen adjusted; slightly bluer)
     "#1f77b4",  # tab:blue (unchanged)
@@ -2337,7 +2337,7 @@ def vstack_scores(score_list):
     """Safely stack a list of 2D score arrays."""
     return np.vstack(score_list)
 
-#%% New example
+#%% New example #2
 def micro_roc_with_std(all_y_test_folds, all_y_score_folds, n_classes, color, label):
     # define common FPR grid
     mean_fpr = np.linspace(0, 1, 101)
@@ -2387,7 +2387,7 @@ def micro_roc_with_std(all_y_test_folds, all_y_score_folds, n_classes, color, la
                      color=color, alpha=0.2)
     
 
-#%% Test new julius code
+#%% Test new example #3
 def micro_roc_with_std(all_y_test_folds, all_y_score_folds, n_classes, color, label):
     # define common FPR grid
     mean_fpr = np.linspace(0, 1, 101)
@@ -3734,3 +3734,4 @@ for i, (df, color, letter, title, r2, xlim, xticks) in enumerate(
 plt.tight_layout()
 plt.savefig(r'U:\Hydrological Data\EStreams\Figures\1st paper\Version 2\FI_rankingscatter_v2_notext_10C_V2.pdf',bbox_inches='tight', dpi=300)
 plt.savefig(r'U:\Hydrological Data\EStreams\Figures\1st paper\Version 2\FI_rankingscatter_v2_notext_10C_V2.png',bbox_inches='tight', dpi=300)
+
